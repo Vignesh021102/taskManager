@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="signinForm" class="form">
+        <div>
+            <label for="nameIn">Name</label>
+            <input id="nameIn" name="name" type="text" placeholder="Enter name" required />
+        </div>
+        <div>
+            <label for="mailIn">E-mail</label>
+            <input id="mailIn" name="mailId" type="email" placeholder="Enter e-mail ID" re />
+        </div>
+        <div>
+            <label for="passIn">Password</label>
+            <input id="passIn" name="password" type="password" placeholder="Enter password" required />
+        </div>
+        <div>
+            <label for="cPassIn">conform password</label>
+            <input id="cPassIn" name="cPassword" type="password" placeholder="Conform password" required />
+        </div>
+        <div class="buttonBox">
+            <button onclick="clearIn()">clear <i class="fas fa-times"></i></button>
+            <button onclick="signin()">submit  <i class="fas fa-check"></i></button>
+        </div>
+       
+    </div>
+    <div class="form" id="loginForm">
+        <div>
+            <label for="userIn">User name</label>
+            <input id="userInL" name="userName" type="text" placeholder="Enter username" required />
+        </div>
+        <div>
+            <label for="passIn">Password</label>
+            <input id="passInL" name="password" type="password" placeholder="Enter password" required />
+        </div>
+        <div class="buttonBox">
+            <button onclick="clearIn()">cancel <i class="fas fa-times"></i></button>
+            <button onclick="login()">submit <i class="fas fa-check"></i></button>
+        </div>
+    </div>
+    <div id="messageBox"></div>
+    <button id="toggle" onclick="toggleForms()">register <i class="fas fa-chevron-right"></i></button>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+</body>
+</html>

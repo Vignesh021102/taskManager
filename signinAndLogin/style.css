@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+body {
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  color: black;
+  font-family: "Poppins",sans-serif;
+}
+
+::-webkit-scrollbar {
+  background-color: black;
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 50%;
+}
+
+.form {
+  max-width: 80%;
+  height: auto;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px white solid;
+  border-radius: 20px;
+  background: white;
+  color: black;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+.form div {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 5px;
+  height: 10vh;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.form div label {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 800;
+}
+
+.form div input {
+  width: 80%;
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 4px 10px;
+  margin: 5px 0px;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  text-align: left;
+}
+
+.form div input:focus, .form div input:hover {
+  outline: none;
+  border-style: dashed;
+}
+
+.form div input::-webkit-input-placeholder {
+  color: white;
+  opacity: 75%;
+  font-size: 12px;
+}
+
+.form div input:-ms-input-placeholder {
+  color: white;
+  opacity: 75%;
+  font-size: 12px;
+}
+
+.form div input::-ms-input-placeholder {
+  color: white;
+  opacity: 75%;
+  font-size: 12px;
+}
+
+.form div input::placeholder {
+  color: white;
+  opacity: 75%;
+  font-size: 12px;
+}
+
+.form button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form button:hover {
+  border-color: black;
+  color: black;
+  background-color: white;
+}
+
+.form .buttonBox {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.form .buttonBox button:first-child {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+.form .buttonBox button:first-child:hover {
+  border-color: white;
+  color: white;
+  background-color: black;
+}
+
+#toggle {
+  margin: 5px;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+#toggle:hover {
+  background-color: white;
+  color: black;
+}
+
+#signinForm {
+  display: none;
+}
+
+i {
+  font-size: 15px;
+  padding: 2px 3px;
+}
+
+#messageBox {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  color: black;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 500;
+  background-color: white;
+  padding: 5px;
+}
+/*# sourceMappingURL=style.css.map */

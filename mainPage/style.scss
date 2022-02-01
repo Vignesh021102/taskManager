@@ -1,0 +1,269 @@
+$mainCol:white;
+$secCol:black;
+
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    overflow: hidden;
+    color: $mainCol;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border-radius: 10px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i{
+        margin: 2px;
+        font-size: 15px;
+    }
+}
+#adder{
+    width:100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        width: 80%;
+        max-width:350px;
+        background-color: inherit;
+        color: inherit;
+        border: 2px solid $mainCol;
+        transition-duration: 1s;
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+    button{
+        background-color: $mainCol;
+        color: $secCol;
+        border: 1px solid $mainCol;
+        padding: 2px 6px;
+        border-radius: 15px;
+        margin: 5px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            background-color: $secCol;
+            color: $mainCol;
+        }
+    }
+    #profileB{
+        padding:5px;
+        margin: 2px 8px;
+        i {
+            padding: 0px;
+            color: $secCol;
+            font-size: 22px;
+        }
+        &:hover{
+            background-color: $secCol;
+            i {
+                color: $mainCol;
+            }
+        }
+    }
+}
+
+#profileM{
+    width: fit-content;
+    min-width: 100px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px 2px;
+    border-radius: 10px;
+    button{
+        border: 1px solid $secCol;
+        background-color: $secCol;
+        color: $mainCol;
+        margin: 2px;
+        &:hover{
+        background-color: $mainCol;
+        color: $secCol;
+        }
+    }
+}
+
+#viewer{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    color: $mainCol;
+    .true{
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+    div{
+        width: 70%;
+        height: fit-content;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        display: flex;
+        font-size: 17px;
+        justify-content:space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 3px;
+        padding: 5px 10px;
+        color: inherit;
+        &:hover{
+            border-color: $secCol;
+            background-color: $mainCol;
+            color: $secCol;
+            button:hover{
+                border-color: $secCol;
+                background-color: $secCol;
+                color: $mainCol;
+            }
+        }
+        
+        p{
+            margin: 3px;
+            width: 60%;
+            word-wrap: break-word;
+            color: inherit;
+        }
+        button{
+            background-color: inherit;
+            border: 1px solid ;
+            border-color: inherit;
+            border-radius: 10px;
+            color: inherit;
+            transition-duration: 0.5s;
+            font-size: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i{
+                margin: 2px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    height: 15px;
+    appearance: none;
+}
+::-webkit-scrollbar-track{
+    
+    background-color: $secCol;
+    border-radius: 25px;
+}
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    border: 3px solid $secCol;
+    border-radius: 25px;
+    background-color: $mainCol;
+}
+
+
+#editViewer{
+    position:absolute;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.479);
+    backdrop-filter: blur(5px);
+    color: $mainCol;
+    border: 3px solid $mainCol;
+    border-radius: 15px;
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    padding: 15px 5px;
+    div{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: inherit;
+        margin: 2px;
+    }
+    
+    p{
+        color: $mainCol;
+        font-size: inherit; 
+        margin: 2px;
+        padding: 5px;
+    }
+    #textIB{
+        border: 2px solid rgba(255, 255, 255, 0);
+        border-radius: 2px;
+        background-color: transparent;
+        color: $mainCol;
+        margin:2px 10px;
+        padding: 2px 4px;
+        &:focus{
+            outline: none;
+            border-color: $mainCol;
+        }
+    }
+    #buttonBox{
+        justify-content: space-around;
+
+        button{
+            border: 2px solid $secCol;
+            border-radius: 10px;
+            background-color: $mainCol;
+            color: $secCol;
+            transition-duration: 0.5s;
+            &:hover{
+                border-color:$mainCol ;
+                background-color: $secCol;
+                color: $mainCol;
+            }
+        }
+        button:first-child{
+            border: 2px solid $mainCol;
+            background-color: $secCol;
+            color: $mainCol;
+            &:hover{
+                border-color:$secCol ;
+                background-color: $mainCol;
+                color: $secCol;
+            }
+        }
+    }
+    #check{
+        appearance: none;
+        background-color: $secCol;
+        width: 15px;
+        height: 15px;
+        border: 1px solid $mainCol;
+        border-radius: 50%;
+        &:checked{
+            background-color: $mainCol;
+        }
+    }
+}
+
+i{
+    font-size: 15px;
+    padding: 2px 4px;
+}

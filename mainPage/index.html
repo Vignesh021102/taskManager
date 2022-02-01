@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task Manager</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="adder">
+        <div>
+            <input type="text" />
+            <button >add <i class="fas fa-plus"></i></button>
+        </div>
+        <button id="profileB" onclick="toggleProfileM()" title="profile"><i class="fas fa-user-circle"></i> </button>
+    </div>
+    <div id="profileM">
+        <button onclick="info()"><i class="fas fa-info"></i>info </button>
+        <button onclick="logOut()"> <i class="fas fa-sign-out-alt"></i> log out</button>
+    </div>
+    <div id="viewer">
+    </div>
+    <div id="editViewer">
+        <div>
+            <p>id: </p><p id="idP"></p>
+        </div>
+        <div>
+            <p>text: </p>
+            <input id="textIB" type="text"/>
+        </div>
+        <div>
+            <label for="input"> completed: </label> <input title="click" id="check" type="checkbox"/>
+        </div>
+        <div id="buttonBox">
+            <button onclick="toggleEditViewer(true)">cancel<i class="fas fa-times"></i></button>
+            <button onclick="updateT()" >done<i class="fas fa-check"></i></button>
+            <button onclick="deleteT()">delete <i class="fas fa-trash"></i></button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+</body>
+</html>

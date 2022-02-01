@@ -1,0 +1,156 @@
+$mainCol:rgb(255, 255, 255);
+$secCol:rgb(0, 0, 0);
+$thCol:rgb(0, 0, 0);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    overflow:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $secCol;
+    color: $thCol;
+    font-family: "Poppins",sans-serif;
+}
+::-webkit-scrollbar{
+    background-color: $secCol;
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track{
+    background-color: $secCol;
+}
+::-webkit-scrollbar-corner{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: $mainCol;
+    &:hover{
+        opacity: 50%;
+        //border: 1px solid $thCol;
+    }
+}
+.form{
+    max-width: 80%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px  rgb(255, 255, 255) solid; 
+    border-radius: 20px;
+    background: white;
+    color: $thCol;
+    font-size: 18px;
+    font-family: inherit;
+    div{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 5px;
+        height: 10vh;
+        color: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        label{
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: 800;
+        }
+        input{
+            width: 80%;
+            color:$mainCol;
+            font-size: inherit;
+            font-family: inherit;
+            background-color: $secCol;
+            border: 2px solid $thCol;
+            border-radius: 10px;
+            padding: 4px 10px;
+            margin: 5px 0px;
+            transition: 500ms;
+            text-align: left;
+            &:focus,&:hover{
+                outline: none;
+                border-style: dashed;
+            }
+            &::placeholder{
+                color: $mainCol;
+                opacity: 75%;
+                font-size: 12px;
+            }
+        }
+    }
+    button{
+        margin: 5px;
+        padding: 5px 10px;
+        border: 2px solid $mainCol;
+        border-radius: 10px;
+        background-color: $secCol;
+        color: $mainCol;
+        font-size: inherit;
+        font-family: inherit;
+        font-weight: 800;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        &:hover{
+            border-color:$thCol;
+            color: $secCol;
+            background-color: $mainCol;
+        }
+    }
+    .buttonBox{
+        flex-direction: row;
+        button:first-child{
+            border: 1px solid $secCol;
+            background-color: $mainCol;
+            color: $secCol;
+            &:hover{
+                border-color: $mainCol;
+                color: $mainCol;
+                background-color: $secCol;
+            }
+        }
+    }
+}
+#toggle{
+    margin: 5px;
+    padding:5px 10px;
+    border: 2px solid $mainCol;
+    border-radius: 10px;
+    background-color: $secCol;
+    color: $mainCol;
+    font-size: inherit;
+    font-family: inherit;
+    &:hover{
+        background-color: $mainCol;
+        color:$thCol;
+    }
+}
+#signinForm{
+    display:none
+}
+i{
+    font-size: 15px;
+    padding: 2px 3px;
+}
+
+#messageBox{
+    position: absolute;
+    bottom:2px;
+    right: 2px;
+    color: $secCol;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    background-color: $mainCol;
+    padding: 5px;
+}
