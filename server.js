@@ -7,8 +7,8 @@ const findUser = require("./modules/findUser")
 
 
 var app = express();
-app.use("/public",express.static("taskManagerWithServer/signinAndLogin"));
-app.use("/user",express.static("taskManagerWithServer/mainPage"));
+app.use("/public",express.static("./signinAndLogin"));
+app.use("/user",express.static("./mainPage"));
 app.use(express.json())
 
 
